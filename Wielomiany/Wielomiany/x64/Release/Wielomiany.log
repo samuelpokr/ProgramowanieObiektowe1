@@ -1,0 +1,9 @@
+﻿  main.cpp
+C:\Users\spokr\OneDrive\Pulpit\projekty snap\cwiczenia\rok2\probiekt\Wielomiany\Wielomiany\main.cpp(10,24): warning C4267: "inicjowanie": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Users\spokr\OneDrive\Pulpit\projekty snap\cwiczenia\rok2\probiekt\Wielomiany\Wielomiany\main.cpp(28,34): warning C4244: "=": konwersja z "__int64" do "int", możliwa utrata danych
+C:\Users\spokr\OneDrive\Pulpit\projekty snap\cwiczenia\rok2\probiekt\Wielomiany\Wielomiany\main.cpp(67,30): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+  Trwa generowanie kodu
+  Previous IPDB not found, fall back to full compilation.
+  All 16 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Zakończono generowanie kodu
+  Wielomiany.vcxproj -> C:\Users\spokr\OneDrive\Pulpit\projekty snap\cwiczenia\rok2\probiekt\Wielomiany\x64\Release\Wielomiany.exe
