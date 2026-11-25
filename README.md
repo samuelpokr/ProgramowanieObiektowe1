@@ -3,7 +3,7 @@
 ## Zad 1: Klasa Wielomian
  - [x] analiza składni (napis -> wielomian)
  - [ ] klasa Wielomian
-   - [ ] analiza składni jako konstruktor
+   - [x] analiza składni jako konstruktor
    - [ ] pozostałe konstruktory
    - [ ] metoda Pokaz() 
  - [ ] operatory += (metoda klasy) i +
