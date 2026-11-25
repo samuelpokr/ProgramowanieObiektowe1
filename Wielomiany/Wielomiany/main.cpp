@@ -1,9 +1,9 @@
-#include <iostream>
-
+#include "Wielomian.h"
+/*
 typedef struct {
-    float* wspolczynnik;
+    double* wspolczynnik;
     int stopien;
-} Wielomian;
+} WielomianOld;
 
 char* UsunOdstepy(const char* napis) {
     char* napis2;
@@ -40,14 +40,14 @@ int OkreslStopien(const char* napis) {
     return maksStopien;
 }
 
-float* PrzydzielPamiec(int stopien) {
-    float* tab = new float[stopien + 1];
+double* PrzydzielPamiec(int stopien) {
+    double* tab = new double[stopien + 1];
     for (int i = 0; i <= stopien; i++)
         tab[i] = 0.0f;
     return tab;
 }
 
-const char* AnalizujJednomian(const char* napis, Wielomian* w) {
+const char* AnalizujJednomian(const char* napis, WielomianOld* w) {
     int wykladnik = 0;
     int znak = 1;
     double wspolczynnik = 1;
@@ -71,13 +71,13 @@ const char* AnalizujJednomian(const char* napis, Wielomian* w) {
     return napis;
 }
 
-void AnalizujJednomiany(const char* napis, Wielomian* w) {
+void AnalizujJednomiany(const char* napis, WielomianOld* w) {
     while (*napis)
         napis = AnalizujJednomian(napis, w);
 }
 
-Wielomian Analizuj(const char* napis) {
-    Wielomian w;
+WielomianOld Analizuj(const char* napis) {
+    WielomianOld w;
     char* bezOdstepow = UsunOdstepy(napis);
     w.stopien = OkreslStopien(bezOdstepow);
     w.wspolczynnik = PrzydzielPamiec(w.stopien);
@@ -85,7 +85,7 @@ Wielomian Analizuj(const char* napis) {
     delete[] bezOdstepow;
     return w;
 }
-/*
+
 void Pokaz(Wielomian w) {
     int wykl = w.stopien;
     while (w.wspolczynnik[wykl] == 0)
@@ -95,8 +95,8 @@ void Pokaz(Wielomian w) {
 */
 int main() {
     const char* napis = "2x^3 - x^2 + 2x - 7.5";
-    Wielomian w = Analizuj(napis);
-    std::cout << w.wspolczynnik[2] << std::endl;
+    Wielomian w(napis);
+    w.Pokaz();
 
     return 0;
 }
