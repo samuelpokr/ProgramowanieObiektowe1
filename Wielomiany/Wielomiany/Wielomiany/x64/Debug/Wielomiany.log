@@ -1,0 +1,6 @@
+﻿  Wielomian.cpp
+C:\Users\pk\Desktop\Nowy folder\Wielomiany\Wielomiany\Wielomian.cpp(7,24): warning C4267: "inicjowanie": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Users\pk\Desktop\Nowy folder\Wielomiany\Wielomiany\Wielomian.cpp(25,34): warning C4244: "=": konwersja z "__int64" do "int", możliwa utrata danych
+  main.cpp
+  Generowanie kodu...
+  Wielomiany.vcxproj -> C:\Users\pk\Desktop\Nowy folder\Wielomiany\x64\Debug\Wielomiany.exe
