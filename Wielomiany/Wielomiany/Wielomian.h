@@ -1,12 +1,12 @@
 #pragma once
-class Wielomian
-{
+class Wielomian {
 	double* wspolczynnik;
 	int stopien;
 	const char* AnalizujJednomian(const char* napis);
 	void AnalizujJednomiany(const char* napis);
 public:
 	Wielomian(const char* napis);
+	~Wielomian();
 	void Pokaz();
 };
 

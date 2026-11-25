@@ -79,6 +79,11 @@ Wielomian::Wielomian(const char* napis) {
     AnalizujJednomiany(bezOdstepow);
     delete[] bezOdstepow;
 }
+
+Wielomian::~Wielomian() {
+    delete[] wspolczynnik;
+}
+
 void Wielomian::Pokaz() {
     std::cout << wspolczynnik[2] << std::endl;
 }
